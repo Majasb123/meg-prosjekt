@@ -13,6 +13,9 @@
 body {
     font-size: 16px;
     font-family: "Roboto", sans-serif;
+     background-color: rgb(218, 243, 225);
+    flex-wrap: wrap;
+
 
 }
 
@@ -38,7 +41,7 @@ h1 {
 
     display: flex;
     color: white;
-    background-color: rgb(244, 107, 244);
+    background-color: green;
     justify-content: center;
     align-items: center;
 
@@ -59,7 +62,7 @@ h2 {
 nav {
 
     display: flex;
-    background-color: rgb(244, 107, 244);
+    background-color: rgb(186, 222, 192);
     padding: 10px;
 }
 
@@ -91,7 +94,7 @@ nav .nav-boks {
 
 
 nav a {
-    color: rgb(255, 255, 255);
+    color:  rgb(102, 139, 111);
     border-radius: 20px;
     padding: 20px;
     text-decoration: none;
@@ -101,7 +104,8 @@ nav a {
 
 nav a:hover {
 
-    background-color: rgb(216, 69, 172);
+    background-color: rgb(153, 192, 148);
+    color: rgb(233, 248, 232);
 
     transition: 500ms;
 
@@ -120,18 +124,13 @@ nav a:hover {
 
 
 
-body {
-    background-color: rgb(255, 205, 254);
-    flex-wrap: wrap;
 
-
-}
 
 h3 {
     font-size: 45px;
     text-align: center;
     margin-top: 20px;
-    color: rgb(244, 107, 244);;
+    color: blue;
 
 }
 
@@ -298,11 +297,7 @@ footer {
 }
 
 .footer-b-2 {
-
-
-    display: flex;
-    flex: 1;
-    flex-direction: column;
+ x-direction: column;
     justify-content: flex-start;
 
 
@@ -359,7 +354,7 @@ footer {
 
     padding: 20px;
     gap: 30px;
-    background-color: rgb(255, 115, 255);
+    background-color:  rgb(102, 139, 111);;
     color: white;
     /* vil ha shadow */
 
