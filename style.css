@@ -164,7 +164,7 @@ table {
 
 
 .timeplan1 td {
-    background-color: rgb(255, 234, 254);
+    background-color: rgb(241, 249, 240);
     padding: 2px;
     border: dotted black 1px;
     min-width: 50px;
@@ -180,7 +180,7 @@ table {
 }
 
 thead>* {
-    background-color: rgb(244, 107, 244);
+    background-color:  rgb(148, 191, 156);
 
 }
 
@@ -253,7 +253,7 @@ footer {
     flex: 1;
     justify-content: center;
     padding: 10px;
-    background-color: rgb(244, 107, 244);
+    background-color:  rgb(102, 139, 111);
     color: white;
 
 
@@ -315,7 +315,7 @@ footer {
 .copyright {
 
     display: flex;
-    background-color: rgb(244, 107, 244);
+    background-color:  rgb(102, 139, 111);;
     flex-direction: row;
     justify-content: center;
     padding: 5px;
