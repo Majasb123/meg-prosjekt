@@ -13,7 +13,7 @@
 body {
     font-size: 16px;
     font-family: "Roboto", sans-serif;
-     background-color: rgb(218, 243, 225);
+    background-color: rgb(218, 243, 225);
     flex-wrap: wrap;
 
 
@@ -52,10 +52,11 @@ h1 {
 h2 {
 
     display: flex;
-    color: rgb(255, 71, 224);
+    color: rgb(102, 139, 111);
     grid-column: 1/7;
     justify-content: center;
     padding: 20px;
+    font-size: 30px;
 
 }
 
@@ -94,7 +95,7 @@ nav .nav-boks {
 
 
 nav a {
-    color:  rgb(102, 139, 111);
+    color: rgb(102, 139, 111);
     border-radius: 20px;
     padding: 20px;
     text-decoration: none;
@@ -130,18 +131,18 @@ h3 {
     font-size: 45px;
     text-align: center;
     margin-top: 20px;
-    color: blue;
+    color: rgb(102, 139, 111);
 
 }
 
-.timeplan{
+.timeplan {
 
     justify-content: center;
 
 
 }
 
-h7{
+h7 {
 
     justify-content: center;
 }
@@ -180,7 +181,7 @@ table {
 }
 
 thead>* {
-    background-color:  rgb(148, 191, 156);
+    background-color: rgb(148, 191, 156);
 
 }
 
@@ -253,7 +254,7 @@ footer {
     flex: 1;
     justify-content: center;
     padding: 10px;
-    background-color:  rgb(102, 139, 111);
+    background-color: rgb(152, 186, 160);
     color: white;
 
 
@@ -297,7 +298,7 @@ footer {
 }
 
 .footer-b-2 {
- x-direction: column;
+    flex-direction: column;
     justify-content: flex-start;
 
 
@@ -315,7 +316,7 @@ footer {
 .copyright {
 
     display: flex;
-    background-color:  rgb(102, 139, 111);;
+    background-color:  rgb(152, 186, 160);
     flex-direction: row;
     justify-content: center;
     padding: 5px;
@@ -354,7 +355,8 @@ footer {
 
     padding: 20px;
     gap: 30px;
-    background-color:  rgb(102, 139, 111);;
+    background-color: rgb(102, 139, 111);
+    ;
     color: white;
     /* vil ha shadow */
 
@@ -373,14 +375,19 @@ h4 {
     display: block;
     display: flex;
     gap: 20px;
-   
+
 
 }
 
-.main-header{
+.barndom-bilder img{
+
+
+    border: groove 5px rgb(102, 139, 111);
+}
+
+.main-header {
     margin bottom: 20px;
 
-   
 }
 
 .barndom-tekst {
@@ -390,12 +397,12 @@ h4 {
 
 }
 
-h5{
+h5 {
     display: flex;
-    color: rgb(244, 107, 244);
+    color: rgb(102, 139, 111);
     font-size: 45px;
     justify-content: center;
-    padding: 20px; 
+    padding: 20px;
     margin-bottom: 30px;
     margin-top: 30px;
 
