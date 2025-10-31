@@ -6,15 +6,237 @@
     box-sizing: border-box;
     border-collapse: collapse;
     font-weight: normal;
+    font-family: "Delius", cursive;
+
+
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+
+    font-weight: 500;
 
 }
 
 
 body {
+    display: flex;
+    flex-direction: column;
     font-size: 16px;
-    font-family: "Roboto", sans-serif;
+    /*     font-family: "Roboto", sans-serif; */
     background-color: rgb(218, 243, 225);
     flex-wrap: wrap;
+    width: 100%;
+
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+
+
+@media (max-width: 768px) {
+    body {
+
+        width: 600px;
+    }
+
+    nav {
+
+        width: 100%;
+
+    }
+
+    nav ul {
+
+        width: 100%;
+
+
+    }
+
+    nav a {
+
+        font-size: 13px;
+        gap: 3px;
+
+    }
+
+    footer {
+
+        font-size: 10px;
+
+    }
+
+    .timeplan1 {
+
+        max-width: 600px;
+
+
+    }
+
+
+    .venn-card img {
+
+        max-width: 125px;
+        max-height: 125px;
+
+    }
+
+    .venn-card p {
+
+        font-size: 12px;
+
+    }
+
+
+
+    .boks1,
+    .boks2,
+    .boks3,
+    .boks4 {
+
+
+        width: 100%;
+    }
+
+    .barndom-bilder {
+
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 15px;
+    }
+
+    .barndom-bilder img {
+
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto;
+
+    }
+
+    .barndom-tekst {
+
+        padding: 15px;
+        font-size: 15px;
+    }
+
+    table td {
+
+        padding: 0;
+
+    }
+
+
+    .barndom-bilder {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 0 10px;
+
+
+
+    }
+
+    .barndom-bilder img {
+
+        width: 100%;
+        max-width: none;
+        border: 3px solid rgb(102, 139, 111);
+
+    }
+
+
+    .timeplan1 {
+        padding: 0;
+        margin: 20px 0;
+
+
+    }
+
+    .timeplan1 table {
+
+        padding: 0;
+    }
+
+    main {
+
+        max-width: 768px;
+        margin: 0 auto;
+
+    }
+
+
+    .favoritter-index {
+
+        font-size: 15px;
+        height: fit-content;
+    }
+
+}
+
+
+main {
+
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px;
+
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+
+}
+
+.main-index {
+
+    margin-top: -40px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+
+.index-bilde img {
+
+    display: flex;
+    display: block;
+    width: 50%;
+    justify-content: center;
+
+
+}
+
+
+.bildelinker {
+
+    width: 100%;
+    margin-top: 40px;
+
+
+}
+
+.bildelinker ul {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+
+
+}
+
+.bildelinker ul a img {
+
+    display: block;
+    aspect-ratio: 1/1;
+    max-width: 100px;
+    gap: 20px;
 
 
 }
@@ -29,42 +251,34 @@ ul {
 
 img {
 
-
     aspect-ratio: 1/1;
     object-fit: cover;
     display: block;
     height: auto;
     width: 100%;
-}
-
-h1 {
-
-    display: flex;
-    color: white;
-    background-color: green;
-    justify-content: center;
-    align-items: center;
-
-
 
 }
 
-h2 {
+
+header h2 {
 
     display: flex;
     color: rgb(102, 139, 111);
-    grid-column: 1/7;
     justify-content: center;
-    padding: 20px;
     font-size: 30px;
+    padding: 30px;
 
 }
 
-nav {
 
+
+
+nav {
+    width: 100%;
     display: flex;
     background-color: rgb(186, 222, 192);
     padding: 10px;
+
 }
 
 nav .nav-boks {
@@ -80,13 +294,12 @@ nav .nav-boks {
     display: flex;
     grid-column: 1/4;
     grid-row: 1/4;
-
-
 }
 
 .nav-boks {
 
     display: flex;
+    flex: 1;
     justify-content: flex-end;
     font-size: 18px;
     grid-column: 7/11;
@@ -123,46 +336,203 @@ nav a:hover {
 
 }
 
+.tekstboks-index1 {
+
+    background-color: rgb(186, 222, 192);
+    padding: 20px;
+    border-radius: 20px;
+    border-bottom: 5px solid rgb(79, 108, 79);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2)
+}
+
+.index-info {
+
+
+    display: flex;
+    grid-template-columns: (repeat(4, 1fr));
+    flex-direction: row;
+    gap: 8px;
 
 
 
+}
+
+
+.favoritter-index {
+
+    display: flex;
+    padding: 20px;
+
+    background-color: rgb(186, 222, 192);
+    border-radius: 20px;
+    width: fit-content;
+    margin-top: 20px;
+    flex: 1;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2)
+}
+
+.familie-index {
+
+    display: flex;
+    flex: 3;
+    padding: 20px;
+    background-color: rgb(143, 182, 153);
+    color: white;
+    border-radius: 20px;
+    width: fit-content;
+    margin-top: 20px;
+    line-height: 2;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2)
+}
+
+.jobb-index {
+
+    display: flex;
+    flex: 3;
+    padding: 20px;
+    background-color: rgb(158, 196, 164);
+    border-radius: 20px;
+    width: fit-content;
+    margin-top: 20px;
+    line-height: 2;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2)
+}
 
 h3 {
-    font-size: 45px;
-    text-align: center;
+
+    font-weight: bolder;
+}
+
+
+
+
+
+.fremtid {
+
+    display: flex;
     margin-top: 20px;
-    color: rgb(102, 139, 111);
-
-}
-
-.timeplan {
-
     justify-content: center;
-
+    margin-top: 60px;
 
 }
 
-h7 {
+.fremtid1 img {
 
+    max-width: 400px;
+    border-radius: 20%;
+
+}
+
+.fremtid1 {
+
+    display: flex;
+
+}
+
+.fremtid2 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 50%;
+
+}
+
+.pyramider {
+
+    display: flex;
+    margin-top: 30px;
+    gap: 20px;
     justify-content: center;
 }
+
+.pyramider1 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 50%;
+
+
+}
+
+.pyramider2 img {
+
+
+    max-width: 400px;
+    border-radius: 20%;
+
+}
+
+.fjelltur {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    margin-top: 60px;
+
+}
+
+.fjelltur1 img {
+
+    max-width: 400px;
+    border-radius: 20%;
+
+}
+
+.fjelltur2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 50%;
+
+}
+
+.india {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    margin-top: 60px;
+
+
+}
+
+.india1 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 50%;
+
+}
+
+.india2 img {
+
+    max-width: 400px;
+    border-radius: 20%;
+
+}
+
 
 .timeplan1 {
-    margin-top: 20px;
-    justify-content: center;
 
+    margin: 30px 0;
+    margin-top: -40px;
 
 }
 
-table {
+.timeplan1 table {
 
-    min-width: 1200px;
+
+    border-collapse: collapse;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    justify-content: center;
     margin: 0 auto;
 
-
 }
-
-
 
 .timeplan1 td {
     background-color: rgb(241, 249, 240);
@@ -172,10 +542,12 @@ table {
     padding: 20px;
     text-align: center;
 
+
 }
 
-.timeplan1 th {
-
+.timeplan1 th .timeplan td {
+    padding: 12px;
+    text-align: center;
     border: solid black 2px;
 
 }
@@ -238,49 +610,44 @@ thead>* {
 
 footer {
 
-    display: flex;
-    margin: 0 auto;
-    flex-direction: column;
-    margin-top: 100%;
+
+    width: 100%;
 
 
 }
-
 
 
 .footer-a {
 
     display: flex;
-    flex: 1;
     justify-content: center;
-    padding: 10px;
+    padding: 5px;
     background-color: rgb(152, 186, 160);
     color: white;
-
-
+    font-size: 12px;
 
 }
+
 
 .footer-b {
 
     display: flex;
-
-    flex: 1;
-    flex-direction: row;
-
+    flex-wrap: wrap;
+    padding: 15px 20px;
+    background-color: rgb(240, 245, 242);
 }
+
 
 .footer-b ul {
 
+    padding: 5px 0;
     justify-content: center;
-
-
 }
 
 .footer-b .footer-box {
 
     display: flex;
-    padding: 10px;
+    padding: 5px;
     justify-content: center;
 
 
@@ -316,11 +683,11 @@ footer {
 .copyright {
 
     display: flex;
-    background-color:  rgb(152, 186, 160);
+    background-color: rgb(152, 186, 160);
     flex-direction: row;
     justify-content: center;
     padding: 5px;
-    font-size: 13px;
+    font-size: 8px;
     color: white;
 
 
@@ -330,7 +697,7 @@ footer {
 .venner-grid {
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     padding: 20px;
     gap: 25px;
 
@@ -338,31 +705,45 @@ footer {
 }
 
 
-.venner-grid img {
+.venn-card img {
     width: 200px;
     height: 200px;
     border: 5px gold;
     border-radius: 90%;
     margin: 0 auto;
-
     border-style: outset;
 
+}
+
+
+.venn-card:hover {
+
+    transform: translateY(-10px);
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.5);
+
+
+
+}
+
+.venn-card:hover img {
+
+    transform: scale(1.1);
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.5);
 
 
 }
 
 .venn-card {
 
+    grid-column: span 2;
     padding: 20px;
     gap: 30px;
     background-color: rgb(102, 139, 111);
-    ;
     color: white;
-    /* vil ha shadow */
-
 
 
 }
+
 
 h4 {
     font-weight: bold;
@@ -371,22 +752,47 @@ h4 {
 
 .barndom-bilder {
 
-
-    display: block;
     display: flex;
     gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px 0;
 
 
 }
 
-.barndom-bilder img{
+
+.barndom-tekst p {
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
 
 
-    border: groove 5px rgb(102, 139, 111);
+
 }
+
+.barndom-bilder img {
+    border-radius: 10px;
+    border: 8px double rgb(102, 139, 111);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    flex: 1 1 200px;
+    max-width: 300px;
+    box-shadow: 0 0 10px rgba(102, 139, 111, 0.5);
+    object-fit: cover;
+
+}
+
+
+.barndom-bilder img:hover {
+    transform: translateY(-5px) scale(1.02);
+    /* Lifts up slightly on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    /* Sterkere skygge on hover */
+}
+
 
 .main-header {
-    margin bottom: 20px;
+    margin-bottom: 20px;
 
 }
 
@@ -406,5 +812,69 @@ h5 {
     margin-bottom: 30px;
     margin-top: 30px;
 
+
+}
+
+.interesse-galleri {
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    padding: 15px;
+    margin-top: -67px;
+
+
+
+
+}
+
+
+.interesse-galleri img {
+
+    aspect-ratio: 4/3;
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+
+.interesse:hover {
+
+    transform: translateY(-5px);
+
+}
+
+.interesse:hover img {
+
+    transform: scale(1.0.5);
+}
+
+
+.interesse:nth-child(1),
+.interesse:nth-child(2) .interesse:nth-child(7) {
+    grid-column: span 1;
+}
+
+
+
+.interesse:nth-child(3),
+.interesse:nth-child(4),
+.interesse:nth-child(5),
+.interesse:nth-child(8),
+.interesse:nth-child(9),
+.interesse:nth-child(10) {
+    grid-column: span 2;
+
+}
+
+
+
+.interesse:nth-child(6),
+.interesse:nth-child(11),
+.interesse:nth-child(12) {
+    grid-column: span 3;
 
 }
